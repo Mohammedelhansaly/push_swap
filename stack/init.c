@@ -1,5 +1,4 @@
 #include "push_swap.h"
-#include "../libft/libft.h"
 
 t_stack *init_stack(int size)
 {
