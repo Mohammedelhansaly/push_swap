@@ -6,7 +6,7 @@
 /*   By: moel-han <moel-han@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/10 15:18:21 by moel-han          #+#    #+#             */
-/*   Updated: 2025/12/12 19:18:16 by moel-han         ###   ########.fr       */
+/*   Updated: 2025/12/13 19:10:24 by moel-han         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,4 +57,6 @@ int	ft_isdigit(int c);
 // sort
 void sort_three(t_stack *a);
 void sort_four(t_stack *a,t_stack *b);
+void sort_five(t_stack *a, t_stack *b);
+void sort_chunks(t_stack *a, t_stack *b);
 #endif

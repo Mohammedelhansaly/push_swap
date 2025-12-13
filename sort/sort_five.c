@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   sort_four.c                                        :+:      :+:    :+:   */
+/*   sort_five.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: moel-han <moel-han@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/12/12 17:05:32 by moel-han          #+#    #+#             */
-/*   Updated: 2025/12/13 15:34:55 by moel-han         ###   ########.fr       */
+/*   Created: 2025/12/11 18:24:19 by moel-han          #+#    #+#             */
+/*   Updated: 2025/12/13 15:36:35 by moel-han         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,9 +26,9 @@ static int find_max(t_stack *a)
     return max_idx;
 }
 
-void sort_four(t_stack *a, t_stack *b)
+static void fisrt_max(t_stack *a, t_stack *b)
 {
-    int index = find_max(a);  
+    int index = find_max(a);
     if (index == 0)
         ra(a);
     else if (index == 1)
@@ -37,9 +37,36 @@ void sort_four(t_stack *a, t_stack *b)
         ra(a);
     }
     else if (index == 2)
+    {
         rra(a);
+        rra(a);
+    }
+    else if (index == 3)
+        rra(a);
+    pb(a, b);
+}
 
-    pb(a, b);        
-    sort_three(a);   
-    pa(b, a); 
+static void second_max(t_stack *a, t_stack *b)
+{
+    int index = find_max(a);
+    if (index == 0)
+        ra(a);
+    else if (index == 1)
+    {
+        ra(a);
+        ra(a);
+    }
+    else if (index == 2)
+    {
+        rra(a);
+    }
+    pb(a, b);
+}
+void sort_five(t_stack *a, t_stack *b)
+{
+    fisrt_max(a, b);
+    second_max(a,b);
+    sort_three(a);
+    pa(b, a);
+    pa(b,a);
 }
