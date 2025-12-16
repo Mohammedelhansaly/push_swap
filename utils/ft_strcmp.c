@@ -1,18 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   rb.c                                               :+:      :+:    :+:   */
+/*   ft_strcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: moel-han <moel-han@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/12/11 17:49:25 by moel-han          #+#    #+#             */
-/*   Updated: 2025/12/14 17:56:41 by moel-han         ###   ########.fr       */
+/*   Created: 2025/12/16 18:15:42 by moel-han          #+#    #+#             */
+/*   Updated: 2025/12/16 18:21:25 by moel-han         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
+int	ft_strcmp(const char *s1, const char *s2)
+{
+	int	i;
 
-void rb(t_stack **b){
-    rotate_stack(b);
-    ft_putstr("rb\n");
+	i = 0;
+	
+	while (s1[i] && s2[i])
+	{
+		if (s1[i] != s2[i])
+			return (((unsigned char)s1[i] - (unsigned char)s2[i]));
+		i++;
+	}
+	return (0);
 }

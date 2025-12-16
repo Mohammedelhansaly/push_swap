@@ -1,45 +1,45 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   sort_four.c                                        :+:      :+:    :+:   */
+/*   sorted_stack.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: moel-han <moel-han@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/12/12 17:05:32 by moel-han          #+#    #+#             */
-/*   Updated: 2025/12/13 15:34:55 by moel-han         ###   ########.fr       */
+/*   Created: 2025/12/15 12:30:33 by moel-han          #+#    #+#             */
+/*   Updated: 2025/12/16 18:10:44 by moel-han         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-static int find_max(t_stack *a)
+int check_sorted(t_stack *a)
 {
-    int i = 0;
-    int max_idx = 0;
+    t_stack *tmp;
 
-    while (i <= a->top)
+    tmp = a;
+    while (tmp->next)
     {
-        if (a->data[i] > a->data[max_idx])
-            max_idx = i;
-        i++;
+        if (tmp->value > tmp->next->value)
+        {
+            return (0);
+        }
+        tmp = tmp->next;
     }
-    return max_idx;
+    return (1);
 }
-
-void sort_four(t_stack *a, t_stack *b)
+void sorted_stack(t_stack **a, t_stack **b)
 {
-    int index = find_max(a);  
-    if (index == 0)
-        ra(a);
-    else if (index == 1)
+    int size = size_stack(*a);
+    if (check_sorted(*a))
     {
-        ra(a);
-        ra(a);
+        return;
     }
-    else if (index == 2)
-        rra(a);
-
-    pb(a, b);        
-    sort_three(a);   
-    pa(b, a); 
+    else if (size <= 5)
+    {
+        small_sort(a, b, size);
+    }
+    else
+    {
+        large_sort(a, b, size);
+    }
 }

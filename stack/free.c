@@ -1,18 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   rb.c                                               :+:      :+:    :+:   */
+/*   free_stack.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: moel-han <moel-han@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/12/11 17:49:25 by moel-han          #+#    #+#             */
-/*   Updated: 2025/12/14 17:56:41 by moel-han         ###   ########.fr       */
+/*   Created: 2025/12/16 20:03:50 by moel-han          #+#    #+#             */
+/*   Updated: 2025/12/16 20:07:07 by moel-han         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
-
-void rb(t_stack **b){
-    rotate_stack(b);
-    ft_putstr("rb\n");
+void free_stack(t_stack *st)
+{
+    t_stack *node;
+    while (st)
+    {
+        node = st;
+        st = st->next;
+        free(node);
+    }
 }

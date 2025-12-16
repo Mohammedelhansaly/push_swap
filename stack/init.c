@@ -1,10 +1,64 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   init.c                                             :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: moel-han <moel-han@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/12/14 17:10:55 by moel-han          #+#    #+#             */
+/*   Updated: 2025/12/14 18:11:13 by moel-han         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "push_swap.h"
 
-t_stack *init_stack(int size)
+void free_array(char **array)
 {
-    t_stack *st = malloc(sizeof(t_stack));
-    st->data = malloc(sizeof(int) * size);
-    st->top = -1;
-    st->size = size;
-    return st;
+    int i;
+
+    i = 0;
+    if (!array)
+        return;
+    while (array[i])
+        free(array[i++]);
+    free(array);
+}
+static char *join_args(int ac, char **av)
+{
+    char *joined;
+    char *tmp;
+    int i;
+    i = 1;
+    joined = ft_strdup("");
+    while (i < ac)
+    {
+        tmp = ft_strjoin(joined, av[i]);
+        free(joined);
+        joined = ft_strjoin(tmp, " ");
+        free(tmp);
+        i++;
+    }
+    return (joined);
+}
+t_stack *init_stack(int ac, char **av, t_stack *a)
+{
+    char **array;
+    char *joined_args;
+    int i;
+    i = 0;
+    joined_args = join_args(ac, av);
+    array = ft_split(joined_args, ' ');
+    free(joined_args);
+    while (array[i])
+    {
+        i++;
+    }
+    i--;
+    while (i >= 0)
+    {
+        stack_push(&a, ft_atoi(array[i]));
+        i--;
+    }
+    free_array(array);
+    return (a);
 }

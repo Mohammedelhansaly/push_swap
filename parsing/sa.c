@@ -6,13 +6,13 @@
 /*   By: moel-han <moel-han@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/11 17:43:10 by moel-han          #+#    #+#             */
-/*   Updated: 2025/12/12 19:12:14 by moel-han         ###   ########.fr       */
+/*   Updated: 2025/12/14 17:57:07 by moel-han         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void sa(t_stack *a){
+void sa(t_stack **a){
     swap_stack(a);
     ft_putstr("sa\n");
 }
