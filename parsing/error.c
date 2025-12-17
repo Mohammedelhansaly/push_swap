@@ -6,12 +6,13 @@
 /*   By: moel-han <moel-han@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/14 18:12:27 by moel-han          #+#    #+#             */
-/*   Updated: 2025/12/16 18:12:10 by moel-han         ###   ########.fr       */
+/*   Updated: 2025/12/17 16:53:42 by moel-han         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
+
 void error_message(void){
     ft_putstr("Error\n");
-    exit(0);
+    exit(1);
 }

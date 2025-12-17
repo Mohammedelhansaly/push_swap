@@ -1,23 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   free_stack.c                                       :+:      :+:    :+:   */
+/*   free.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: moel-han <moel-han@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/16 20:03:50 by moel-han          #+#    #+#             */
-/*   Updated: 2025/12/16 20:07:07 by moel-han         ###   ########.fr       */
+/*   Updated: 2025/12/17 16:56:14 by moel-han         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
-void free_stack(t_stack *st)
+void free_stack(t_stack **st)
 {
-    t_stack *node;
-    while (st)
+    t_stack *tmp;
+
+    if (!st)
+        return;
+
+    while (*st)
     {
-        node = st;
-        st = st->next;
-        free(node);
+        tmp = *st;
+        *st = (*st)->next;
+        free(tmp);
     }
 }

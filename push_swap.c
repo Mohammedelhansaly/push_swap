@@ -6,7 +6,7 @@
 /*   By: moel-han <moel-han@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/10 15:24:58 by moel-han          #+#    #+#             */
-/*   Updated: 2025/12/16 20:34:17 by moel-han         ###   ########.fr       */
+/*   Updated: 2025/12/17 19:11:46 by moel-han         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ int main(int ac, char **av)
         printf("%d ",a->value);
         a = a->next;
     }
-    free_stack(a);
-    free_stack(b);
+    free_stack(&a);
+    free_stack(&b);
     return 0;
 }

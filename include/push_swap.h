@@ -6,7 +6,7 @@
 /*   By: moel-han <moel-han@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/10 15:18:21 by moel-han          #+#    #+#             */
-/*   Updated: 2025/12/16 20:10:15 by moel-han         ###   ########.fr       */
+/*   Updated: 2025/12/17 16:56:51 by moel-han         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ typedef struct s_chunk
 t_stack *init_stack(int ac, char **av , t_stack *a);
 void stack_push(t_stack **st , int value);
 int size_stack(t_stack *st);
-void free_stack(t_stack *st);
+void free_stack(t_stack **st);
 
 // operations
 void swap_stack(t_stack **st);
@@ -94,7 +94,7 @@ void init_chunk(t_stack **a, t_chunk *chunk, int size);
 void next_chunk(t_chunk *chunk);
 int find_range(int size);
 void push_element_to_b(t_stack **a, t_stack **b, t_chunk *chunk);
-void push_element_to_a(t_stack **a, t_stack **b);
+void push_elements_to_a(t_stack **a, t_stack **b);
 
 // check input
 void	check_input(int argc, char **argv);
