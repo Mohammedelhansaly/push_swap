@@ -1,27 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   push.c                                             :+:      :+:    :+:   */
+/*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: moel-han <moel-han@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/12/18 15:46:43 by moel-han          #+#    #+#             */
-/*   Updated: 2025/12/18 15:57:07 by moel-han         ###   ########.fr       */
+/*   Created: 2025/12/14 17:42:13 by moel-han          #+#    #+#             */
+/*   Updated: 2025/12/18 15:46:14 by moel-han         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "checker.h"
+char	*ft_strjoin(char *s1, char *s2)
+{
+	char	*new;
+	int		i;
+	int		j;
 
-#include "push_swap.h"
-
-void stack_push(t_stack **st , int value){
-    t_stack *new;
-
-    if(!st)
-        return ;
-    new = (t_stack *)malloc(sizeof(t_stack));
-    if(!new)
-        return ;
-    new->value = value;
-    new->next = *st;
-    *st = new;
+	i = 0;
+	j = 0;
+	if (!s1 || !s2)
+		return (NULL);
+	new = malloc(sizeof(char) * ft_strlen(s1) + ft_strlen(s2) + 1);
+	if (!new)
+		return (NULL);
+	while (s1[i])
+	{
+		new[i] = s1[i];
+		i++;
+	}
+	while (s2[j])
+	{
+		new[i] = s2[j];
+		i++;
+		j++;
+	}
+	new[i] = '\0';
+	return (new);
 }

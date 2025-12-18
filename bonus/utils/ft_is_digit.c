@@ -1,27 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   push.c                                             :+:      :+:    :+:   */
+/*   ft_is_digit.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: moel-han <moel-han@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/12/18 15:46:43 by moel-han          #+#    #+#             */
-/*   Updated: 2025/12/18 15:57:07 by moel-han         ###   ########.fr       */
+/*   Created: 2025/12/12 19:17:49 by moel-han          #+#    #+#             */
+/*   Updated: 2025/12/18 15:45:59 by moel-han         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "checker.h"
 
-#include "push_swap.h"
-
-void stack_push(t_stack **st , int value){
-    t_stack *new;
-
-    if(!st)
-        return ;
-    new = (t_stack *)malloc(sizeof(t_stack));
-    if(!new)
-        return ;
-    new->value = value;
-    new->next = *st;
-    *st = new;
+int	ft_isdigit(int c)
+{
+	if (c >= 48 && c <= 57)
+		return (1);
+	return (0);
 }

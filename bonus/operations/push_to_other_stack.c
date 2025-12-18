@@ -1,27 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   push.c                                             :+:      :+:    :+:   */
+/*   push_to_other_stack.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: moel-han <moel-han@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/12/18 15:46:43 by moel-han          #+#    #+#             */
-/*   Updated: 2025/12/18 15:57:07 by moel-han         ###   ########.fr       */
+/*   Created: 2025/12/11 12:27:13 by moel-han          #+#    #+#             */
+/*   Updated: 2025/12/18 15:47:24 by moel-han         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "checker.h"
 
-#include "push_swap.h"
-
-void stack_push(t_stack **st , int value){
-    t_stack *new;
-
-    if(!st)
+void push_to_other_stack(t_stack **from, t_stack **to)
+{
+    t_stack *tmp;
+    if(!from || !(*from))
         return ;
-    new = (t_stack *)malloc(sizeof(t_stack));
-    if(!new)
-        return ;
-    new->value = value;
-    new->next = *st;
-    *st = new;
+    tmp = *from;
+    *from = (*from)->next;
+    tmp->next = *to;
+    *to = tmp;
 }

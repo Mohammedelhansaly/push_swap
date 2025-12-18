@@ -1,27 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   push.c                                             :+:      :+:    :+:   */
+/*   free.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: moel-han <moel-han@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/12/18 15:46:43 by moel-han          #+#    #+#             */
-/*   Updated: 2025/12/18 15:57:07 by moel-han         ###   ########.fr       */
+/*   Created: 2025/12/16 20:03:50 by moel-han          #+#    #+#             */
+/*   Updated: 2025/12/18 15:46:24 by moel-han         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "checker.h"
+void free_stack(t_stack **st)
+{
+    t_stack *tmp;
 
-#include "push_swap.h"
+    if (!st)
+        return;
 
-void stack_push(t_stack **st , int value){
-    t_stack *new;
-
-    if(!st)
-        return ;
-    new = (t_stack *)malloc(sizeof(t_stack));
-    if(!new)
-        return ;
-    new->value = value;
-    new->next = *st;
-    *st = new;
+    while (*st)
+    {
+        tmp = *st;
+        *st = (*st)->next;
+        free(tmp);
+    }
 }

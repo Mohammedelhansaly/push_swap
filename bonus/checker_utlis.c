@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   sorted_stack.c                                     :+:      :+:    :+:   */
+/*   checker_utlis.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: moel-han <moel-han@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/12/15 12:30:33 by moel-han          #+#    #+#             */
-/*   Updated: 2025/12/18 20:34:25 by moel-han         ###   ########.fr       */
+/*   Created: 2025/12/18 16:41:59 by moel-han          #+#    #+#             */
+/*   Updated: 2025/12/18 16:42:12 by moel-han         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "push_swap.h"
+#include "checker.h"
 
-static int check_sorted(t_stack *a)
+int check_sorted(t_stack *a)
 {
     t_stack *tmp;
 
@@ -26,20 +26,4 @@ static int check_sorted(t_stack *a)
         tmp = tmp->next;
     }
     return (1);
-}
-void sorted_stack(t_stack **a, t_stack **b)
-{
-    int size = size_stack(*a);
-    if (check_sorted(*a))
-    {
-        return;
-    }
-    else if (size <= 5)
-    {
-        small_sort(a, b, size);
-    }
-    else
-    {
-        large_sort(a, b, size);
-    }
 }

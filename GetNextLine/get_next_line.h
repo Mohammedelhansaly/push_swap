@@ -1,27 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   push.c                                             :+:      :+:    :+:   */
+/*   get_next_line.h                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: moel-han <moel-han@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/12/18 15:46:43 by moel-han          #+#    #+#             */
-/*   Updated: 2025/12/18 15:57:07 by moel-han         ###   ########.fr       */
+/*   Created: 2025/11/22 09:44:28 by moel-han          #+#    #+#             */
+/*   Updated: 2025/12/18 20:42:23 by moel-han         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#ifndef GET_NEXT_LINE_H
+# define GET_NEXT_LINE_H
 
-#include "push_swap.h"
+# include <stdint.h>
+# include <stdlib.h>
+# include <unistd.h>
+# include <fcntl.h>
 
-void stack_push(t_stack **st , int value){
-    t_stack *new;
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 2
+# endif
 
-    if(!st)
-        return ;
-    new = (t_stack *)malloc(sizeof(t_stack));
-    if(!new)
-        return ;
-    new->value = value;
-    new->next = *st;
-    *st = new;
-}
+char	*get_next_line(int fd);
+
+
+#endif
