@@ -1,27 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: moel-han <moel-han@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/12 19:04:58 by moel-han          #+#    #+#             */
-/*   Updated: 2025/12/12 19:10:48 by moel-han         ###   ########.fr       */
+/*   Updated: 2025/12/20 16:38:34 by moel-han         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void ft_putstr(char *s)
+void	ft_putstr(char *s)
 {
-    int i;
+	int	i;
 
-    i = 0;
-    if (!s)
-        return;
-    while (s[i])
-    {
-        write(1, &s[i], 1);
-        i++;
-    }
+	i = 0;
+	if (!s)
+		return ;
+	while (s[i])
+	{
+		write(1, &s[i], 1);
+		i++;
+	}
 }

@@ -6,11 +6,12 @@
 /*   By: moel-han <moel-han@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/15 15:13:20 by moel-han          #+#    #+#             */
-/*   Updated: 2025/12/17 16:29:04 by moel-han         ###   ########.fr       */
+/*   Updated: 2025/12/20 16:24:52 by moel-han         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
+
 void	push_in_range(t_stack **a, t_stack **b, t_chunk *chunk)
 {
 	if (!a || !b || !chunk)

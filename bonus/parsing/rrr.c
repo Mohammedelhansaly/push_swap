@@ -6,7 +6,7 @@
 /*   By: moel-han <moel-han@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/11 17:51:43 by moel-han          #+#    #+#             */
-/*   Updated: 2025/12/20 13:43:21 by moel-han         ###   ########.fr       */
+/*   Updated: 2025/12/20 16:03:31 by moel-han         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,5 +16,4 @@ void	rrr(t_stack **a, t_stack **b)
 {
 	rotate_reverse_stack(a);
 	rotate_reverse_stack(b);
-	ft_putstr("rrr\n");
 }

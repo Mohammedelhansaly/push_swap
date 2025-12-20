@@ -6,19 +6,20 @@
 /*   By: moel-han <moel-han@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/11 12:27:13 by moel-han          #+#    #+#             */
-/*   Updated: 2025/12/14 17:54:58 by moel-han         ###   ########.fr       */
+/*   Updated: 2025/12/20 16:14:01 by moel-han         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void push_to_other_stack(t_stack **from, t_stack **to)
+void	push_to_other_stack(t_stack **from, t_stack **to)
 {
-    t_stack *tmp;
-    if(!from || !(*from))
-        return ;
-    tmp = *from;
-    *from = (*from)->next;
-    tmp->next = *to;
-    *to = tmp;
+	t_stack	*tmp;
+
+	if (!from || !(*from))
+		return ;
+	tmp = *from;
+	*from = (*from)->next;
+	tmp->next = *to;
+	*to = tmp;
 }

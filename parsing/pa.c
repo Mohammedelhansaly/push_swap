@@ -6,14 +6,14 @@
 /*   By: moel-han <moel-han@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/11 17:45:40 by moel-han          #+#    #+#             */
-/*   Updated: 2025/12/14 17:56:27 by moel-han         ###   ########.fr       */
+/*   Updated: 2025/12/20 16:16:10 by moel-han         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void pa(t_stack **b, t_stack **a)
+void	pa(t_stack **b, t_stack **a)
 {
-    push_to_other_stack(b, a);
-    ft_putstr("pa\n");
+	push_to_other_stack(b, a);
+	ft_putstr("pa\n");
 }

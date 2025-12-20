@@ -6,11 +6,12 @@
 /*   By: moel-han <moel-han@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/16 15:20:52 by moel-han          #+#    #+#             */
-/*   Updated: 2025/12/17 16:29:35 by moel-han         ###   ########.fr       */
+/*   Updated: 2025/12/20 16:23:39 by moel-han         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
+
 static int	find_max_value(t_stack *stack)
 {
 	int	max_value;

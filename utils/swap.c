@@ -6,16 +6,17 @@
 /*   By: moel-han <moel-han@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/11 12:07:14 by moel-han          #+#    #+#             */
-/*   Updated: 2025/12/11 18:09:14 by moel-han         ###   ########.fr       */
+/*   Updated: 2025/12/20 16:38:28 by moel-han         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void swap(int *a ,int *b){
-    int tmp;
+void	swap(int *a, int *b)
+{
+	int	tmp;
 
-    tmp = *a;
-    *a = *b;
-    *b = tmp;
+	tmp = *a;
+	*a = *b;
+	*b = tmp;
 }

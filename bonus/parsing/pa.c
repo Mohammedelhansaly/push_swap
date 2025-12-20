@@ -6,7 +6,7 @@
 /*   By: moel-han <moel-han@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/11 17:45:40 by moel-han          #+#    #+#             */
-/*   Updated: 2025/12/20 13:42:49 by moel-han         ###   ########.fr       */
+/*   Updated: 2025/12/20 16:03:09 by moel-han         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,5 +15,4 @@
 void	pa(t_stack **b, t_stack **a)
 {
 	push_to_other_stack(b, a);
-	ft_putstr("pa\n");
 }

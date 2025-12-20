@@ -6,13 +6,14 @@
 /*   By: moel-han <moel-han@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/11 17:49:25 by moel-han          #+#    #+#             */
-/*   Updated: 2025/12/14 17:56:41 by moel-han         ###   ########.fr       */
+/*   Updated: 2025/12/20 16:17:38 by moel-han         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void rb(t_stack **b){
-    rotate_stack(b);
-    ft_putstr("rb\n");
+void	rb(t_stack **b)
+{
+	rotate_stack(b);
+	ft_putstr("rb\n");
 }

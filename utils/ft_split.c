@@ -6,11 +6,12 @@
 /*   By: moel-han <moel-han@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/14 17:15:16 by moel-han          #+#    #+#             */
-/*   Updated: 2025/12/14 17:16:08 by moel-han         ###   ########.fr       */
+/*   Updated: 2025/12/20 16:36:49 by moel-han         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
+
 int	is_in_set(char c, char const *set)
 {
 	int	i;

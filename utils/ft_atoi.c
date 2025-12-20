@@ -6,11 +6,12 @@
 /*   By: moel-han <moel-han@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/12 19:03:40 by moel-han          #+#    #+#             */
-/*   Updated: 2025/12/12 19:18:50 by moel-han         ###   ########.fr       */
+/*   Updated: 2025/12/20 16:34:12 by moel-han         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
+
 int	ft_atoi(char *str)
 {
 	int					i;

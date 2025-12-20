@@ -6,21 +6,22 @@
 /*   By: moel-han <moel-han@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/13 16:42:18 by moel-han          #+#    #+#             */
-/*   Updated: 2025/12/17 19:11:16 by moel-han         ###   ########.fr       */
+/*   Updated: 2025/12/20 16:23:08 by moel-han         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-int find_range(int size)
+int	find_range(int size)
 {
-    if (size <= 100)
-        return size / 6;
-    else if (size <= 500)
-        return size / 12;
-    else
-        return size / (size / 2);
+	if (size <= 100)
+		return (size / 6);
+	else if (size <= 500)
+		return (size / 12);
+	else
+		return (size / (size / 2));
 }
+
 void	init_chunk(t_stack **a, t_chunk *chunk, int size)
 {
 	int	*array;
@@ -57,4 +58,3 @@ void	large_sort(t_stack **a, t_stack **b, int size)
 	free(chunk->sorted_array);
 	free(chunk);
 }
-
