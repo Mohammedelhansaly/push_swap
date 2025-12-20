@@ -6,7 +6,7 @@
 /*   By: moel-han <moel-han@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/10 15:18:21 by moel-han          #+#    #+#             */
-/*   Updated: 2025/12/20 16:08:13 by moel-han         ###   ########.fr       */
+/*   Updated: 2025/12/20 18:43:54 by moel-han         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,7 +70,7 @@ char				*ft_strjoin(char *s1, char *s2);
 char				*ft_strdup(char *src);
 size_t				ft_strlen(char *str);
 void				*ft_memcpy(void *dest, const void *src, size_t n);
-int					ft_strcmp(const char *s1, const char *s2);
+int					ft_strcmp(char *s1, char *s2);
 int					ft_isspace(int c);
 
 // sort
