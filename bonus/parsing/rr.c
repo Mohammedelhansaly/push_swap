@@ -6,15 +6,15 @@
 /*   By: moel-han <moel-han@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/11 17:49:45 by moel-han          #+#    #+#             */
-/*   Updated: 2025/12/18 15:47:04 by moel-han         ###   ########.fr       */
+/*   Updated: 2025/12/20 13:41:31 by moel-han         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "checker.h"
 
-void rr(t_stack **a, t_stack **b)
+void	rr(t_stack **a, t_stack **b)
 {
-    rotate_stack(a);
-    rotate_stack(b);
-    ft_putstr("rr\n");
+	rotate_stack(a);
+	rotate_stack(b);
+	ft_putstr("rr\n");
 }

@@ -6,22 +6,22 @@
 /*   By: moel-han <moel-han@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/12 19:04:58 by moel-han          #+#    #+#             */
-/*   Updated: 2025/12/18 15:46:05 by moel-han         ###   ########.fr       */
+/*   Updated: 2025/12/20 13:51:40 by moel-han         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "checker.h"
 
-void ft_putstr(char *s)
+void	ft_putstr(char *s)
 {
-    int i;
+	int	i;
 
-    i = 0;
-    if (!s)
-        return;
-    while (s[i])
-    {
-        write(1, &s[i], 1);
-        i++;
-    }
+	i = 0;
+	if (!s)
+		return ;
+	while (s[i])
+	{
+		write(1, &s[i], 1);
+		i++;
+	}
 }

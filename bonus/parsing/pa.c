@@ -6,14 +6,14 @@
 /*   By: moel-han <moel-han@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/11 17:45:40 by moel-han          #+#    #+#             */
-/*   Updated: 2025/12/18 15:46:56 by moel-han         ###   ########.fr       */
+/*   Updated: 2025/12/20 13:42:49 by moel-han         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "checker.h"
 
-void pa(t_stack **b, t_stack **a)
+void	pa(t_stack **b, t_stack **a)
 {
-    push_to_other_stack(b, a);
-    ft_putstr("pa\n");
+	push_to_other_stack(b, a);
+	ft_putstr("pa\n");
 }

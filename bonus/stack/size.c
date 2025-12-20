@@ -6,21 +6,23 @@
 /*   By: moel-han <moel-han@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/14 17:44:23 by moel-han          #+#    #+#             */
-/*   Updated: 2025/12/18 15:46:50 by moel-han         ###   ########.fr       */
+/*   Updated: 2025/12/20 13:47:56 by moel-han         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "checker.h"
 
-int size_stack(t_stack *st){
-    int size;
+int	size_stack(t_stack *st)
+{
+	int	size;
 
-    if(!st)
-        return (0);
-    size = 0;
-    while(st){
-        size++;
-        st = st->next;
-    }
-    return (size);
+	if (!st)
+		return (0);
+	size = 0;
+	while (st)
+	{
+		size++;
+		st = st->next;
+	}
+	return (size);
 }

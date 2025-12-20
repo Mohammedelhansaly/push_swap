@@ -6,13 +6,14 @@
 /*   By: moel-han <moel-han@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/14 18:12:27 by moel-han          #+#    #+#             */
-/*   Updated: 2025/12/18 15:46:53 by moel-han         ###   ########.fr       */
+/*   Updated: 2025/12/20 13:59:52 by moel-han         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "checker.h"
 
-void error_message(void){
-    ft_putstr("Error\n");
-    exit(1);
+void	error_message(void)
+{
+	write(2, "Error\n", 6);
+	exit(1);
 }

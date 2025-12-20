@@ -6,22 +6,22 @@
 /*   By: moel-han <moel-han@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/16 20:03:50 by moel-han          #+#    #+#             */
-/*   Updated: 2025/12/18 15:46:24 by moel-han         ###   ########.fr       */
+/*   Updated: 2025/12/20 13:44:37 by moel-han         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "checker.h"
-void free_stack(t_stack **st)
+
+void	free_stack(t_stack **st)
 {
-    t_stack *tmp;
+	t_stack	*tmp;
 
-    if (!st)
-        return;
-
-    while (*st)
-    {
-        tmp = *st;
-        *st = (*st)->next;
-        free(tmp);
-    }
+	if (!st)
+		return ;
+	while (*st)
+	{
+		tmp = *st;
+		*st = (*st)->next;
+		free(tmp);
+	}
 }

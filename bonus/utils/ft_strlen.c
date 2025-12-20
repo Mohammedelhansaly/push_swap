@@ -6,18 +6,20 @@
 /*   By: moel-han <moel-han@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/14 18:01:59 by moel-han          #+#    #+#             */
-/*   Updated: 2025/12/18 15:46:17 by moel-han         ###   ########.fr       */
+/*   Updated: 2025/12/20 13:54:52 by moel-han         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "checker.h"
 
-size_t ft_strlen(char *str){
-    size_t i;
+size_t	ft_strlen(char *str)
+{
+	size_t	i;
 
-    i = 0;
-    while(str[i]){
-        i++;
-    }
-    return i;
+	i = 0;
+	while (str[i])
+	{
+		i++;
+	}
+	return (i);
 }

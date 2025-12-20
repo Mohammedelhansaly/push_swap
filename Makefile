@@ -15,7 +15,7 @@ SRCSB = bonus/checker_bonus.c bonus/checker_utlis.c \
 	bonus/operations/swap_stack.c bonus/operations/rotate_stack.c bonus/operations/rotate_reverse_stack.c bonus/operations/push_to_other_stack.c  \
 	bonus/parsing/sa.c bonus/parsing/sb.c bonus/parsing/ss.c bonus/parsing/pa.c bonus/parsing/pb.c bonus/parsing/ra.c bonus/parsing/rb.c bonus/parsing/rr.c bonus/parsing/rra.c bonus/parsing/rrb.c bonus/parsing/rrr.c bonus/parsing/error.c \
 	bonus/utils/swap.c bonus/utils/ft_memcpy.c bonus/utils/ft_strlen.c bonus/utils/ft_atoi.c bonus/utils/ft_putstr.c bonus/utils/ft_is_digit.c bonus/utils/ft_split.c bonus/utils/ft_strdup.c bonus/utils/ft_strjoin.c bonus/utils/ft_is_space.c bonus/utils/ft_strcmp.c bonus/utils/ft_strchr.c \
-	bonus/input/check_input.c \
+	bonus/input/check_input.c bonus/input/check_input_utils.c \
 	GetNextLine/get_next_line.c
 OBJS = $(SRCS:.c=.o)
 OBJSB = $(SRCSB:.c=.o)

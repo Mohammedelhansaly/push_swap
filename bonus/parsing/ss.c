@@ -6,15 +6,15 @@
 /*   By: moel-han <moel-han@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/11 17:47:16 by moel-han          #+#    #+#             */
-/*   Updated: 2025/12/18 15:47:20 by moel-han         ###   ########.fr       */
+/*   Updated: 2025/12/20 13:40:29 by moel-han         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "checker.h"
 
-void ss(t_stack **a, t_stack **b)
+void	ss(t_stack **a, t_stack **b)
 {
-    swap_stack(a);
-    swap_stack(b);
-    ft_putstr("ss\n");
+	swap_stack(a);
+	swap_stack(b);
+	ft_putstr("ss\n");
 }

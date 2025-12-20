@@ -6,16 +6,17 @@
 /*   By: moel-han <moel-han@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/11 12:07:14 by moel-han          #+#    #+#             */
-/*   Updated: 2025/12/18 15:46:19 by moel-han         ###   ########.fr       */
+/*   Updated: 2025/12/20 13:56:43 by moel-han         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "checker.h"
 
-void swap(int *a ,int *b){
-    int tmp;
+void	swap(int *a, int *b)
+{
+	int	tmp;
 
-    tmp = *a;
-    *a = *b;
-    *b = tmp;
+	tmp = *a;
+	*a = *b;
+	*b = tmp;
 }

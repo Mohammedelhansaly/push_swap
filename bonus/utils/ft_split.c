@@ -6,11 +6,12 @@
 /*   By: moel-han <moel-han@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/14 17:15:16 by moel-han          #+#    #+#             */
-/*   Updated: 2025/12/18 15:46:07 by moel-han         ###   ########.fr       */
+/*   Updated: 2025/12/20 13:52:00 by moel-han         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "checker.h"
+
 int	is_in_set(char c, char const *set)
 {
 	int	i;

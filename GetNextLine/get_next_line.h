@@ -6,7 +6,7 @@
 /*   By: moel-han <moel-han@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/22 09:44:28 by moel-han          #+#    #+#             */
-/*   Updated: 2025/12/18 20:42:23 by moel-han         ###   ########.fr       */
+/*   Updated: 2025/12/19 15:20:54 by moel-han         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
 # include <fcntl.h>
 
 # ifndef BUFFER_SIZE
-#  define BUFFER_SIZE 2
+#  define BUFFER_SIZE 20
 # endif
 
 char	*get_next_line(int fd);

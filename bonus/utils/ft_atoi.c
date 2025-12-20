@@ -6,11 +6,12 @@
 /*   By: moel-han <moel-han@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/12 19:03:40 by moel-han          #+#    #+#             */
-/*   Updated: 2025/12/18 15:45:56 by moel-han         ###   ########.fr       */
+/*   Updated: 2025/12/20 13:49:21 by moel-han         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "checker.h"
+
 int	ft_atoi(char *str)
 {
 	int					i;
