@@ -6,7 +6,7 @@
 /*   By: moel-han <moel-han@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/15 15:13:20 by moel-han          #+#    #+#             */
-/*   Updated: 2025/12/20 16:24:52 by moel-han         ###   ########.fr       */
+/*   Updated: 2025/12/22 18:56:11 by moel-han         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,11 +42,3 @@ void	push_element_to_b(t_stack **a, t_stack **b, t_chunk *chunk)
 		return ;
 	push_in_range(a, b, chunk);
 }
-// pb
-// pb
-// ra
-// pb
-// pb
-// 1 2 4 5 7 9
-
-// 9 1

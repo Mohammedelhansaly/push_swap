@@ -6,7 +6,7 @@
 /*   By: moel-han <moel-han@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/10 15:24:58 by moel-han          #+#    #+#             */
-/*   Updated: 2025/12/19 17:47:39 by moel-han         ###   ########.fr       */
+/*   Updated: 2025/12/22 17:39:42 by moel-han         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,11 @@ int	main(int ac, char **av)
 	a = NULL;
 	b = NULL;
 	a = init_stack(ac, av, a);
+	if (check_double(&a) == 1)
+	{
+		free_stack(&a);
+		error_message();
+	}
 	sorted_stack(&a, &b);
 	free_stack(&a);
 	free_stack(&b);

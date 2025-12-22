@@ -6,7 +6,7 @@
 /*   By: moel-han <moel-han@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/18 14:48:12 by moel-han          #+#    #+#             */
-/*   Updated: 2025/12/20 13:39:00 by moel-han         ###   ########.fr       */
+/*   Updated: 2025/12/22 19:18:21 by moel-han         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,7 +54,7 @@ void				error_message(void);
 
 // utils
 void				swap(int *a, int *b);
-int					ft_atoi(char *str);
+long				ft_atoi(char *str);
 void				ft_putstr(char *str);
 int					ft_isdigit(int c);
 char				**ft_split(char const *s, char c);
@@ -72,7 +72,7 @@ void				free_array(char **array);
 char				*join_arg(int argc, char **argv);
 int					check_number(char *argv);
 int					ft_is_empty_white_space(char *str);
-int					check_double(char **str);
+int					check_double(t_stack **st);
 
 // check_sort
 int					check_sorted(t_stack *a);

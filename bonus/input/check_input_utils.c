@@ -6,32 +6,28 @@
 /*   By: moel-han <moel-han@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/16 18:22:06 by moel-han          #+#    #+#             */
-/*   Updated: 2025/12/19 18:51:22 by moel-han         ###   ########.fr       */
+/*   Updated: 2025/12/22 19:02:40 by moel-han         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "checker.h"
 
-int	check_double(char **str)
+int	check_double(t_stack **st)
 {
-	int	i;
-	int	j;
-	int	len;
+	t_stack	*tmp;
+	t_stack	*node;
 
-	i = 0;
-	len = ft_strlen(*str);
-	while (i < len)
+	tmp = *st;
+	while (tmp)
 	{
-		j = i + 1;
-		while (j < len)
+		node = tmp->next;
+		while (node)
 		{
-			if (ft_strcmp(str[i], str[j]) == 0)
-			{
+			if (tmp->value == node->value)
 				return (1);
-			}
-			j++;
+			node = node->next;
 		}
-		i++;
+		tmp = tmp->next;
 	}
 	return (0);
 }

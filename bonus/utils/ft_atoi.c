@@ -6,17 +6,17 @@
 /*   By: moel-han <moel-han@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/12 19:03:40 by moel-han          #+#    #+#             */
-/*   Updated: 2025/12/20 13:49:21 by moel-han         ###   ########.fr       */
+/*   Updated: 2025/12/22 19:04:14 by moel-han         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "checker.h"
 
-int	ft_atoi(char *str)
+long	ft_atoi(char *str)
 {
-	int					i;
-	int					sign;
-	unsigned long int	result;
+	int		i;
+	int		sign;
+	long	result;
 
 	i = 0;
 	sign = 1;

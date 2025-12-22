@@ -6,7 +6,7 @@
 /*   By: moel-han <moel-han@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/14 17:10:55 by moel-han          #+#    #+#             */
-/*   Updated: 2025/12/20 13:46:17 by moel-han         ###   ########.fr       */
+/*   Updated: 2025/12/22 19:19:05 by moel-han         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,6 +50,11 @@ t_stack	*init_stack(int ac, char **av, t_stack *a)
 	{
 		stack_push(&a, ft_atoi(array[i]));
 		i--;
+	}
+	if (check_double(&a) == 1)
+	{
+		free_stack(&a);
+		error_message();
 	}
 	free_array(array);
 	return (a);

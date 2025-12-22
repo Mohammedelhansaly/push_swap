@@ -6,7 +6,7 @@
 /*   By: moel-han <moel-han@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/19 18:51:34 by moel-han          #+#    #+#             */
-/*   Updated: 2025/12/19 19:00:08 by moel-han         ###   ########.fr       */
+/*   Updated: 2025/12/22 19:18:41 by moel-han         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,11 +32,6 @@ void	check_input(int argc, char **argv)
 			error_message();
 		}
 		i++;
-	}
-	if (check_double(array) == 1)
-	{
-		free_array(array);
-		error_message();
 	}
 	free_array(array);
 }

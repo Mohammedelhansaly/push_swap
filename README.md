@@ -50,7 +50,7 @@ AI (ChatGPT) was used to assist in understanding and improving certain aspects o
 
 - **Memory Management:** Guidance was provided on how to properly allocate and free memory in stack operations to avoid memory leaks. 
 
-- **Algorithm Explanation:** AI helped explain sorting strategies such as the **chunk sort , radix sort** algorithm.
+- **Algorithm Explanation:** AI helped explain sorting strategies such as the **chunk sort , radix sort , quick sort ...** algorithm.
 
 No AI-generated code was used directly; all final code and testing were done manually.
 
@@ -78,9 +78,9 @@ OK
 
     - Optimized sorting for:
 
-    - Small stacks (≤ 5 elements)
+      - Small stacks (≤ 5 elements)
 
-    - Large stacks using chunk-based sorting
+      - Large stacks using chunk-based sorting
 
 - Compatible with the official 42 checker
 
